@@ -8,13 +8,13 @@
     },
     {
       "id": 2,
-      "name": "Teddy",
+      "name": "Teddie",
       "breed": "Rhodesian Ridgeback",
       "sex": "female"
     },
     {
       "id": 3,
-      "name": "Snickers",
+      "name": "Snic",
       "breed": "Dachshund",
       "sex": "female"
     },
@@ -26,7 +26,7 @@
     },
     {
       "id": 5,
-      "name": "Gracie",
+      "name": "frog",
       "breed": "Miniature Pinscher",
       "sex": "female"
     },
@@ -38,13 +38,13 @@
     },
     {
       "id": 7,
-      "name": "Diamond",
+      "name": "Diamonds",
       "breed": "Labrador",
       "sex": "female"
     },
     {
       "id": 8,
-      "name": "Chloe",
+      "name": "Chlo",
       "breed": "Dandie Terrier",
       "sex": "male"
     },
@@ -56,7 +56,7 @@
     },
     {
       "id": 10,
-      "name": "Patches",
+      "name": "Patchy",
       "breed": "Dingo",
       "sex": "male"
     },
@@ -74,7 +74,7 @@
     },
     {
       "id": 13,
-      "name": "Lady",
+      "name": "Lacy",
       "breed": "Mexicanhairless",
       "sex": "female"
     },
@@ -104,7 +104,7 @@
     },
     {
       "id": 18,
-      "name": "Chance",
+      "name": "josh",
       "breed": "Toy Terrier",
       "sex": "male"
     },
@@ -119,30 +119,6 @@
       "name": "Coco",
       "breed": "Affenpinscher",
       "sex": "female"
-    },
-    {
-      "name": "joshua",
-      "breed": "Rhodesian Ridgeback",
-      "sex": "male",
-      "id": 21
-    },
-    {
-      "name": "Baby",
-      "breed": "Scottish Deerhound",
-      "sex": "female",
-      "id": 22
-    },
-    {
-      "name": "adult",
-      "breed": "Scottish Deerhound",
-      "sex": "male",
-      "id": 23
-    },
-    {
-      "name": "adult",
-      "breed": "Scottish Deerhound",
-      "sex": "male",
-      "id": 24
     }
   ]
 }

@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
     const tBody = document.getElementById('table-body')
     const form = document.getElementById('dog-form')
-    
+    const p = document.createElement('p')
+        form.appendChild(p)
  fetch('http://localhost:3000/dogs')
     .then(res => res.json())
     .then(data => submitData(data))
@@ -29,18 +30,19 @@ function submitData(data) {
         
     });
     function moveToForm(name, breed, sex, id) {
+        
         form.children[0].value = name
         form.children[1].value = breed
         form.children[2].value = sex
-        form.children[3].innerText = id
-         console.log(form.children)
+        p.innerText = id
 
     }   
     form.addEventListener('submit', event => submitForm(event))
     function submitForm(event) {
         event.preventDefault()
-        console.log(`http://localhost:3000/dogs/${event.target.children[3].innerText}`)
-       fetch(`http://localhost:3000/dogs/${event.target.children[3].innerText}`, {
+
+        console.log(event.target.children[4].textContent)
+       fetch(`http://localhost:3000/dogs/${event.target.children[4].textContent}`, {
         method: 'PATCH',
         headers: {
             "Content-Type": "application/json",
@@ -49,14 +51,16 @@ function submitData(data) {
         body: JSON.stringify({
             name: event.target.children[0].value,
             breed: event.target.children[1].value,
-            sex: event.target.children[2].value
+            sex: event.target.children[2].value,
+
        })
        })
        tBody.innerHTML= ""
-
+       
        fetch('http://localhost:3000/dogs')
     .then(res => res.json())
     .then(data => submitData(data))
+    // event.target.children[4].remove()
     }
 }
     
